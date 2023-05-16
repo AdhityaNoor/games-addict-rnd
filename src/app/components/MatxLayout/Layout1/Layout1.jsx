@@ -54,7 +54,7 @@ const Layout1 = () => {
   const {
     leftSidebar: { mode: sidenavMode, show: showSidenav },
   } = layout1Settings;
-
+  
   const getSidenavWidth = () => {
     switch (sidenavMode) {
       case 'full':

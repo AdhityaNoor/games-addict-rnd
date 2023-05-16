@@ -34,7 +34,7 @@ const JWTRoot = styled(JustifyBox)(() => ({
 
 // inital login credentials
 const initialValues = {
-  email: 'jason@ui-lib.com',
+  email: 'justadhitya3798@gmail.com',
   password: 'dummyPass',
   remember: true,
 };

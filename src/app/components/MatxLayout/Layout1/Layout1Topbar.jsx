@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import { Span } from '../../../components/Typography';
 import NotificationBar from '../../NotificationBar/NotificationBar';
 import ShoppingCart from '../../ShoppingCart';
+import Brand from '../../Brand';
 
 const StyledIconButton = styled(IconButton)(({ theme }) => ({
   color: theme.palette.text.primary,
@@ -24,6 +25,7 @@ const TopbarRoot = styled('div')(({ theme }) => ({
   height: topBarHeight,
 }));
 
+// background: theme.palette.primary.main,
 const TopbarContainer = styled(Box)(({ theme }) => ({
   padding: '8px',
   paddingLeft: 18,
@@ -32,7 +34,9 @@ const TopbarContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  background: theme.palette.primary.main,
+  
+  background: '#1d1d1d',
+
   [theme.breakpoints.down('sm')]: {
     paddingLeft: 16,
     paddingRight: 16,
@@ -100,6 +104,9 @@ const Layout1Topbar = () => {
           <StyledIconButton onClick={handleSidebarToggle}>
             <Icon>menu</Icon>
           </StyledIconButton>
+
+          <Brand>
+        </Brand>
 
           <IconBox>
             <StyledIconButton>
